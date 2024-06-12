@@ -28,6 +28,47 @@
   color: #61dafb;
 }
 
+.currency-container {
+  font-size: 16px;
+  color: #333;
+}
+
+.currency-select {
+  background-color: #7EC77E;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  margin-left: 10px;
+  position: relative;
+}
+
+.currency-select::after {
+  content: '\25BC'; /* Down arrow */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: white;
+}
+
+.currency-select option {
+  background-color: #7EC77E;
+  color: white;
+  padding: 10px;
+}
+
+.currency-select option:hover {
+  background-color: #6FBF6F;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
